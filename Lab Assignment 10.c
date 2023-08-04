@@ -152,8 +152,9 @@ int main(void)
     }
 
     pTrie = deallocateTrie(pTrie);
-    if (pTrie == NULL)
-        printf("Trie deallocated successfully.\n");
+	  if (pTrie != NULL)
+		  printf("There is an error in this program\n");
+
     
     for (int i = 0; i < numWords; i++)
     {
