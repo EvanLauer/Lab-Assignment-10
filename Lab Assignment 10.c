@@ -4,7 +4,6 @@
 
 #define ALPHABET_SIZE 26
 
-// Trie node structure
 struct TrieNode
 {
     struct TrieNode* children[ALPHABET_SIZE];
@@ -17,7 +16,6 @@ struct Trie
     struct TrieNode* root;
 };
 
-// Creates a new trie node
 struct TrieNode* createNode()
 {
     struct TrieNode* node = (struct TrieNode*)malloc(sizeof(struct TrieNode));
@@ -155,7 +153,6 @@ int main(void)
 	  if (pTrie != NULL)
 		  printf("There is an error in this program\n");
 
-    
     for (int i = 0; i < numWords; i++)
     {
         free(inWords[i]);
